@@ -13,6 +13,7 @@ Scenario: Logga in på Playground
     [Documentation]    Logga in på playground
     [Tags]    Test1
     Set Selenium Speed    ${speed}
+
     Given Användaren är på login sidan
     When Användaren loggar in med sitt namn och pass
     Then Användaren borde vara inloggad
