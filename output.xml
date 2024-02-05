@@ -1,196 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T18:10:21.740252" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-05T09:40:51.730577" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot" source="C:\Users\betty\robot">
 <suite id="s1-s1" name="Test" source="C:\Users\betty\robot\test.robot">
 <test id="s1-s1-t1" name="Scenario: Logga in på Playground" line="12">
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>${speed}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2024-02-04T18:10:22.289923" elapsed="0.001289"/>
+<status status="PASS" start="2024-02-05T09:40:52.200439" elapsed="0.000000"/>
 </kw>
 <kw name="Given Användaren är på login sidan">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:10:22.293457" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-02-05T09:40:52.203043" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-04T18:10:22.292388" elapsed="2.052466"/>
+<status status="PASS" start="2024-02-05T09:40:52.203043" elapsed="3.010363"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:10:24.346150" level="INFO">Opening url 'https://automationplayground.com/crm/login.html'</msg>
+<msg time="2024-02-05T09:40:55.213406" level="INFO">Opening url 'https://automationplayground.com/crm/login.html'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-04T18:10:24.346051" elapsed="1.972195"/>
+<status status="PASS" start="2024-02-05T09:40:55.213406" elapsed="1.960187"/>
 </kw>
-<status status="PASS" start="2024-02-04T18:10:22.292388" elapsed="4.025858"/>
+<status status="PASS" start="2024-02-05T09:40:52.201774" elapsed="4.971819"/>
 </kw>
 <kw name="When Användaren loggar in med sitt namn och pass">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:10:26.323454" level="INFO">Typing text 'beata.tar@gmail.se' into text field '//input[@id='email-id']'.</msg>
+<msg time="2024-02-05T09:40:57.175884" level="INFO">Typing text 'beata.tar@gmail.se' into text field '//input[@id='email-id']'.</msg>
 <arg>//input[@id='email-id']</arg>
 <arg>${user}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T18:10:26.322153" elapsed="3.422010"/>
+<status status="PASS" start="2024-02-05T09:40:57.175884" elapsed="3.392678"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:10:29.744778" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
-<msg time="2024-02-04T18:10:31.866563" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-02-05T09:41:00.571015" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg time="2024-02-05T09:41:02.717716" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>//input[@id='password']</arg>
 <arg>${pass}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T18:10:29.744778" elapsed="3.377983"/>
+<status status="PASS" start="2024-02-05T09:41:00.569804" elapsed="3.398885"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:10:33.123968" level="INFO">Clicking button '//button[@id='submit-id']'.</msg>
+<msg time="2024-02-05T09:41:03.971128" level="INFO">Clicking button '//button[@id='submit-id']'.</msg>
 <arg>//button[@id='submit-id']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T18:10:33.123968" elapsed="5.373354"/>
+<status status="PASS" start="2024-02-05T09:41:03.969923" elapsed="5.630723"/>
 </kw>
-<status status="PASS" start="2024-02-04T18:10:26.320833" elapsed="12.176489"/>
+<status status="PASS" start="2024-02-05T09:40:57.174671" elapsed="12.425975"/>
 </kw>
 <kw name="Then Användaren borde vara inloggad">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>//input[@placeholder='Search']</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-04T18:10:38.501885" elapsed="1.028900"/>
+<status status="PASS" start="2024-02-05T09:41:09.604497" elapsed="1.043802"/>
 </kw>
-<status status="PASS" start="2024-02-04T18:10:38.499975" elapsed="1.030810"/>
+<status status="PASS" start="2024-02-05T09:41:09.603429" elapsed="1.044870"/>
 </kw>
 <doc>Logga in på playground</doc>
 <tag>Test1</tag>
-<status status="PASS" start="2024-02-04T18:10:22.287538" elapsed="17.244563"/>
-</test>
-<test id="s1-s1-t2" name="Scenario: Skapa ny customer" line="19">
-<kw name="Given Användaren är på login sidan">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:10:39.536571" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-04T18:10:39.535474" elapsed="1.995430"/>
-</kw>
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:10:41.532232" level="INFO">Opening url 'https://automationplayground.com/crm/login.html'</msg>
-<arg>${url}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-04T18:10:41.532232" elapsed="1.964350"/>
-</kw>
-<status status="PASS" start="2024-02-04T18:10:39.535474" elapsed="3.961108"/>
-</kw>
-<kw name="When Användaren loggar in med sitt namn och pass">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:10:43.502053" level="INFO">Typing text 'beata.tar@gmail.se' into text field '//input[@id='email-id']'.</msg>
-<arg>//input[@id='email-id']</arg>
-<arg>${user}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T18:10:43.500680" elapsed="3.397425"/>
-</kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:10:46.899104" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
-<msg time="2024-02-04T18:10:49.051137" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>//input[@id='password']</arg>
-<arg>${pass}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T18:10:46.898105" elapsed="3.446235"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:10:50.346119" level="INFO">Clicking button '//button[@id='submit-id']'.</msg>
-<arg>//button[@id='submit-id']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T18:10:50.344772" elapsed="5.358390"/>
-</kw>
-<status status="PASS" start="2024-02-04T18:10:43.499332" elapsed="12.203830"/>
-</kw>
-<kw name="Then Användaren borde kunna se texten new customer på sidan">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//a[@id='new-customer']</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-04T18:10:55.707226" elapsed="1.061216"/>
-</kw>
-<status status="PASS" start="2024-02-04T18:10:55.705935" elapsed="1.062507"/>
-</kw>
-<doc>Skapa ny customer</doc>
-<tag>Test2</tag>
-<status status="PASS" start="2024-02-04T18:10:39.534335" elapsed="17.236456"/>
-</test>
-<test id="s1-s1-t3" name="Scenario: Add ny customer" line="25">
-<kw name="Given Användaren är inloggad">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:10:56.778906" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-04T18:10:56.777590" elapsed="2.058048"/>
-</kw>
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:10:58.836575" level="INFO">Opening url 'https://automationplayground.com/crm/login.html'</msg>
-<arg>${url}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-04T18:10:58.836575" elapsed="2.038556"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:11:00.876700" level="INFO">Typing text 'beata.tar@gmail.se' into text field '//input[@id='email-id']'.</msg>
-<arg>//input[@id='email-id']</arg>
-<arg>${user}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T18:11:00.875131" elapsed="3.460652"/>
-</kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:11:04.337278" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
-<msg time="2024-02-04T18:11:06.508498" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>//input[@id='password']</arg>
-<arg>${pass}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T18:11:04.336889" elapsed="3.425662"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:11:07.764349" level="INFO">Clicking button '//button[@id='submit-id']'.</msg>
-<arg>//button[@id='submit-id']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T18:11:07.762887" elapsed="5.392138"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//input[@placeholder='Search']</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-04T18:11:13.155025" elapsed="1.063925"/>
-</kw>
-<status status="PASS" start="2024-02-04T18:10:56.777312" elapsed="17.442667"/>
-</kw>
-<kw name="When Användaren clickar på new customer knappen">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-04T18:11:14.224171" level="INFO">Clicking element '//a[@id='new-customer']'.</msg>
-<arg>//a[@id='new-customer']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-04T18:11:14.223098" elapsed="3.045611"/>
-</kw>
-<status status="PASS" start="2024-02-04T18:11:14.221701" elapsed="3.047008"/>
-</kw>
-<kw name="Then Användaren borde hamna på add customer sidan">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>//h2[normalize-space()='Add Customer']</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-04T18:11:17.272836" elapsed="1.051853"/>
-</kw>
-<status status="PASS" start="2024-02-04T18:11:17.271440" elapsed="1.053864"/>
-</kw>
-<doc>Add customer</doc>
-<tag>Test3</tag>
-<status status="PASS" start="2024-02-04T18:10:56.774662" elapsed="21.552690"/>
+<status status="PASS" start="2024-02-05T09:40:52.196602" elapsed="18.454060"/>
 </test>
 <doc>Playground Git and BDD</doc>
-<status status="PASS" start="2024-02-04T18:10:21.784721" elapsed="56.551008"/>
+<status status="PASS" start="2024-02-05T09:40:51.782316" elapsed="18.873774"/>
 </suite>
-<status status="PASS" start="2024-02-04T18:10:21.742658" elapsed="56.600763"/>
+<status status="PASS" start="2024-02-05T09:40:51.733081" elapsed="18.930813"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="1" fail="0" skip="0">Test1</stat>
-<stat pass="1" fail="0" skip="0">Test2</stat>
-<stat pass="1" fail="0" skip="0">Test3</stat>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Robot">Robot</stat>
-<stat pass="3" fail="0" skip="0" id="s1-s1" name="Test">Robot.Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot">Robot</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test">Robot.Test</stat>
 </suite>
 </statistics>
 <errors>
